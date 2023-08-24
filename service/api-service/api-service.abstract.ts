@@ -6,8 +6,8 @@ import {
   IBaseInsertRequest,
   IBaseRequest,
 } from './abstract-api.interface';
-import { Paged } from '../entity/paged';
-import { TransformUtils } from '../transform/transform.utils';
+import { Paged } from '../../entity/paged';
+import { TransformUtils } from '../../util/transform/transform.utils';
 
 export abstract class ApiServiceAbstract {
   protected api: AxiosInstance;
