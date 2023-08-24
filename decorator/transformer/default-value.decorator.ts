@@ -1,5 +1,5 @@
 import { Transform, TransformOptions } from 'class-transformer';
-import { isNil } from '../../util/is-nil/is-nil.utils';
+import isNil from '../../util/is-nil/is-nil.utils';
 
 export default function DefaultValue(
   defaultValue: any,
