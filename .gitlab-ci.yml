@@ -1,0 +1,17 @@
+image: andersonao/controlle-ci-docker-node:v20
+
+services:
+  - name: docker:dind
+    entrypoint: ["env", "-u", "DOCKER_HOST"]
+    command: ["dockerd-entrypoint.sh"]
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - pnpm i
+    - pnpm build
+  only:
+    - develop
